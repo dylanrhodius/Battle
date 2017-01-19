@@ -4,6 +4,6 @@
 <br>
 <%= @game.player_2.name %>: <%= @game.player_2.hit_points %>HP
 <br>
-It's <%= @game.turn.name %>'s turn to attack.
+It's <%= @game.active_player.name %>'s turn to attack.
 <br>
 <a href="/attack">Attack</a>

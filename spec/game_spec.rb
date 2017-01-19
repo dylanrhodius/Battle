@@ -14,7 +14,7 @@ describe Game do
       expect(game.player_2).to eq player_2
     end
     it "Sets the first turn to player 1" do
-      expect(game.turn).to eq player_1
+      expect(game.active_player).to eq player_1
     end
   end
 
@@ -28,7 +28,7 @@ describe Game do
   describe "::switch_turn" do
     it "Switches player turns." do
       game.switch_turn
-      expect(game.turn).to eq player_2
+      expect(game.active_player).to eq player_2
     end
   end
 
