@@ -6,4 +6,7 @@
 <br>
 It's <%= @game.active_player.name %>'s turn to attack.
 <br>
-<a href="/attack">Attack</a>
+
+<form action="/attack" method="get">
+  <input type="submit" value="Attack">
+</form>
