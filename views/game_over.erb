@@ -1,0 +1,5 @@
+<% if @game.player_1.hit_points == 0 %>
+  <%= @game.player_1.name %> lost!
+<% else %>
+  <%= @game.player_2.name %> lost!
+<% end %>
